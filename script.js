@@ -5,13 +5,10 @@
     switch (i) {
       case 0:
         return "rock"
-        break;
       case 1:
         return "paper"
-        break;
       case 2:
         return "scissors"
-        break;
     }
   }
 
@@ -20,39 +17,30 @@
       switch (computerSelection) {
         case "rock":
           return `it's a tie, you both picked ${playerSelection}`
-          break;
         case "paper":
           return `you lose, ${computerSelection} beats ${playerSelection}`
-          break;
         case "scissors":
           return `you win! ${playerSelection} beats ${computerSelection}`
-          break;
       }
     }
     else if (playerSelection == "paper") {
       switch (computerSelection) {
         case "paper":
           return `it's a tie, you both picked ${playerSelection}`
-          break;
         case "scissors":
           return `you lose, ${computerSelection} beats ${playerSelection}`
-          break;
         case "rock":
           return `you win! ${playerSelection} beats ${computerSelection}`
-          break;
       }
     }
     else if (playerSelection == "scissors") {
       switch (computerSelection) {
         case "scissors":
           return `it's a tie, you both picked ${playerSelection}`
-          break;
         case "rock":
           return `you lose, ${computerSelection} beats ${playerSelection}`
-          break;
         case "paper":
           return `you win! ${playerSelection} beats ${computerSelection}`
-          break;
       }
     }
   }
