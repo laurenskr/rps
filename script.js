@@ -53,7 +53,9 @@
   const rockButton = document.getElementById("rock");
   const paperButton = document.getElementById("paper")
   const scissorsButton = document.getElementById("scissors")
-  rockButton.addEventListener("click", () => outputDiv.innerText = `${playRound("rock", getComputerChoice())} and the cpu score is now ${cpuScore}`);
+  rockButton.addEventListener("click", () => {outputDiv.innerText = `${playRound("rock", getComputerChoice())} and the cpu score is now ${cpuScore}`;
+    if (cpuScore == 5) {alert("you lost, resetting game"); cpuScore = 0; outputDiv.innerText=""};
+  });
   paperButton.addEventListener("click", () => outputDiv.innerText = `${playRound("paper", getComputerChoice())} and the cpu score is now ${cpuScore}`);
   scissorsButton.addEventListener("click", () => outputDiv.innerText = `${playRound("scissors", getComputerChoice())} and the cpu score is now ${cpuScore}`);
   //output in div
